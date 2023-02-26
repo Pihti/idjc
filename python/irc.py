@@ -25,7 +25,9 @@ import time
 import sys
 import threading
 import gettext
-from inspect import getargspec
+from inspect import getfullargspec
+#   getargspec has been deprecated, so change to getfullargspec
+#   bugfix by Pekka Takala (pekka.takala@pihtisoft.fi)
 from functools import wraps, partial
 
 from gi.repository import GObject
